@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie aplication</h1>
+        <img src="movies.jpeg" alt="moviespicuture">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="">Filmy</a></li>
+            <li><a href="">Playlisty</a></li>
+            <li><a href="">Filmy na Playliscie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy playlista</h2>
+       <form>
+        <label for="title">Nazwa Playlisty: *</label>
+        <input type="text" name="title" id="title" required>
+        <span id="errorTitlePlaylist">Pole jest wymagane</span>
+
+
+        <label for="lenght">Długość Playlisty: *</label>
+        <input type="text" name="length" id="lenght" required>
+        <span id="errorPlaylistLength">Pole jest wymagane</span>
+
+
+        <label for="rating">Ocena Playlisty: *</label>
+        <input type="text" name="rating" id="rating" required>
+        <span id="errorRatingPlaylist">Pole jest wymagane</span>
+
+
+        <label for="createDate">Data utworznie Playlisty: *</label>
+        <input type="text" name="createDate" id="createDate" required>
+        <span id="errorLinkToMovie">Pole jest wymagane</span>
+
+        <div>
+            <p id="errorsSummary">Formularz zawiera błędy</p>
+            <input type="submit" value="Dodaj"/>
+            <a href="">Anuluj</a>
+        </div>
+
+       </form>
+    </main>
+    <footer>
+        Imię, nazwisko, numer studencki
+    </footer>
+</body>
+</html>

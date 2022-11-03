@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie aplication</h1>
+        <img src="movies.jpeg" alt="moviespicuture">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="">Filmy</a></li>
+            <li><a href="">Playlisty</a></li>
+            <li><a href="">Filmy na Playliscie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Edycja Filmu</h2>
+       <form>
+        <label for="moviename">Nazwa filmu: *</label>
+        <input type="text" name="moviename" id="moviename" value="name" required>
+        <span id="errorMovieName"></span>
+
+
+        <label for="lenght">Długość filmu: *</label>
+        <input type="text" name="length" id="lenght" value="len" required>
+        <span id="errorMovieLength"></span>
+
+
+        <label for="rating">Ocena filmu: *</label>
+        <input type="text" name="rating" id="rating" value="dobra" required>
+        <span id="errorRating"></span>
+
+
+        <label for="linktomovie">Link do filmu: *</label>
+        <input type="text" name="linktomovie" id="linktomovie" value="linkv" required>
+        <span id="errorLinkToMovie"></span>
+
+
+        <label for="linktophoto">Link do zdjecia: *</label>
+        <input type="text" name="linktophoto" id="linktophoto" value="linkp" required>
+        <span id="errorLinkToPhoto"></span>
+
+        <div>
+            <p id="errorsSummary"></p>
+            <input type="submit" value="Dodaj"/>
+            <a href="">Anuluj</a>
+        </div>
+
+       </form>
+    </main>
+    <footer>
+        Imię, nazwisko, numer studencki
+    </footer>
+</body>
+</html>
