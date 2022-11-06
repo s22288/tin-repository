@@ -20,14 +20,14 @@
 
     <nav>
         <ul>
-            <li><a href="../StronaGlowna.html" class="active">Strona główna</a></li>
-            <li><a href="../movie/listOfMovies.html" class="active">Filmy</a></li>
-            <li><a href="../playlist/listOfPlaylist.html" class="active">Playlisty</a></li>
-            <li><a href="movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a></li>
+            <li><a href="">Strona główna</a></li>
+            <li><a href="">Filmy</a></li>
+            <li><a href="">Playlisty</a></li>
+            <li><a href="">Filmy na Playliscie</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Szczegóły połączenia</h2>
+        <h2>Nowy playlista</h2>
         <form>
             <label for="movie">Wybierz Film: *</label>
             <select name="movie" id="movie">
@@ -40,7 +40,7 @@
 
             </select>
 
-            <span id="errorTitlePlaylist"></span>
+            <span id="errorTitlePlaylist">Pole jest wymagane</span>
 
 
             <label for="lenght">Wybierz Playliste: *</label>
@@ -53,27 +53,24 @@
                 <option></option>
 
             </select>
-            <span id="errorPlaylistLength">/span>
+            <span id="errorPlaylistLength">Pole jest wymagane</span>
 
 
-                <label for="rating">Dodaj komentarz: *</label>
-                <input type="text" name="rating" id="rating" required>
-                <span id="errorRatingPlaylist"></span>
+            <label for="rating">Dodaj komentarz: *</label>
+            <input type="text" name="rating" id="rating" required>
+            <span id="errorRatingPlaylist">Pole jest wymagane</span>
 
 
-                <label for="createDate">Dodaj numer na playliscie: *</label>
-                <input type="text" name="createDate" id="createDate" required>
-                <span id="errorLinkToMovie"></span>
+            <label for="createDate">Dodaj numer na playliscie: *</label>
+            <input type="text" name="createDate" id="createDate" required>
+            <span id="errorLinkToMovie">Pole jest wymagane</span>
 
-                <div>
-                    <p id="errorsSummary"></p>
-                    <!-- <input type="submit" value="powrót"/>
-            <input type="submit" value="powrót"/> -->
-                    <a href="">Porwót</a>
+            <div>
+                <p id="errorsSummary">Formularz zawiera błędy</p>
+                <input type="submit" value="Dodaj" />
+                <a href="">Anuluj</a>
 
-                    <a href="">Edytuj</a>
-
-                </div>
+            </div>
 
         </form>
     </main>

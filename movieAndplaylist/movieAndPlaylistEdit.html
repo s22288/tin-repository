@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
 
-  
+
 </head>
+
 <body>
     <header>
         <h1>Movie aplication</h1>
@@ -18,62 +20,63 @@
 
     <nav>
         <ul>
-            <li><a href="">Strona główna</a></li>
-            <li><a href="">Filmy</a></li>
-            <li><a href="">Playlisty</a></li>
-            <li><a href="">Filmy na Playliscie</a></li>
+            <li><a href="../StronaGlowna.html" class="active">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html" class="active">Filmy</a></li>
+            <li><a href="../playlist/listOfPlaylist.html" class="active">Playlisty</a></li>
+            <li><a href="movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a></li>
         </ul>
     </nav>
     <main>
         <h2>Szczegóły połączenia</h2>
-       <form>
-        <label for="movie">Wybierz Film: *</label>
-        <select name="movie" id="movie">
-            <option>wybierz film</option>
-            <option value="1"> gwiezdne wojny</option>
-            <option value="2"> Indiana Jones</option>
-            <option value="3"> Harry potter</option>
+        <form>
+            <label for="movie">Wybierz Film: *</label>
+            <select name="movie" id="movie">
+                <option>wybierz film</option>
+                <option value="1"> gwiezdne wojny</option>
+                <option value="2"> Indiana Jones</option>
+                <option value="3"> Harry potter</option>
 
-            <option></option>
+                <option></option>
 
-        </select>
-        
-        <span id="errorTitlePlaylist"></span>
+            </select>
 
-
-        <label for="lenght">Wybierz Playliste: *</label>
-        <select name="movie" id="movie">
-            <option>wybierz playliste</option>
-            <option value="1"> horrory</option>
-            <option value="2"> Filmy akcji</option>
-            <option value="3"> filmy fantasy</option>
-
-            <option></option>
-
-        </select>
-        <span id="errorPlaylistLength">/span>
+            <span id="errorTitlePlaylist"></span>
 
 
-        <label for="rating">Dodaj komentarz: *</label>
-        <input type="text" name="rating" id="rating" required>
-        <span id="errorRatingPlaylist"></span>
+            <label for="lenght">Wybierz Playliste: *</label>
+            <select name="movie" id="movie">
+                <option>wybierz playliste</option>
+                <option value="1"> horrory</option>
+                <option value="2"> Filmy akcji</option>
+                <option value="3"> filmy fantasy</option>
+
+                <option></option>
+
+            </select>
+            <span id="errorPlaylistLength">/span>
 
 
-        <label for="createDate">Dodaj numer na playliscie: *</label>
-        <input type="text" name="createDate" id="createDate" required>
-        <span id="errorLinkToMovie"></span>
+                <label for="rating">Dodaj komentarz: *</label>
+                <input type="text" name="rating" id="rating" required>
+                <span id="errorRatingPlaylist"></span>
 
-        <div>
-            <p id="errorsSummary"></p>
-            <input type="submit" value="Dodaj"/>
-            <a href="">Anuluj</a>
 
-        </div>
+                <label for="createDate">Dodaj numer na playliscie: *</label>
+                <input type="text" name="createDate" id="createDate" required>
+                <span id="errorLinkToMovie"></span>
 
-       </form>
+                <div>
+                    <p id="errorsSummary"></p>
+                    <input type="submit" value="Dodaj" />
+                    <a href="">Anuluj</a>
+
+                </div>
+
+        </form>
     </main>
     <footer>
         Imię, nazwisko, numer studencki
     </footer>
 </body>
+
 </html>

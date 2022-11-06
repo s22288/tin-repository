@@ -27,7 +27,7 @@
         </ul>
     </nav>
     <main>
-        <h2>Szczegóły połączenia</h2>
+        <h2>Nowy playlista</h2>
         <form>
             <label for="movie">Wybierz Film: *</label>
             <select name="movie" id="movie">
@@ -53,27 +53,23 @@
                 <option></option>
 
             </select>
-            <span id="errorPlaylistLength">/span>
+            <span id="errorPlaylistLength"></span>
 
 
-                <label for="rating">Dodaj komentarz: *</label>
-                <input type="text" name="rating" id="rating" required>
-                <span id="errorRatingPlaylist"></span>
+            <label for="rating">Dodaj komentarz: *</label>
+            <input type="text" name="rating" id="rating" required>
+            <span id="errorRatingPlaylist"></span>
 
 
-                <label for="createDate">Dodaj numer na playliscie: *</label>
-                <input type="text" name="createDate" id="createDate" required>
-                <span id="errorLinkToMovie"></span>
+            <label for="createDate">Dodaj numer na playliscie: *</label>
+            <input type="text" name="createDate" id="createDate" required>
+            <span id="errorLinkToMovie"></span>
 
-                <div>
-                    <p id="errorsSummary"></p>
-                    <!-- <input type="submit" value="powrót"/>
-            <input type="submit" value="powrót"/> -->
-                    <a href="">Porwót</a>
-
-                    <a href="">Edytuj</a>
-
-                </div>
+            <div>
+                <p id="errorsSummary"></p>
+                <input type="submit" value="Dodaj" />
+                <a href="">Anuluj</a>
+            </div>
 
         </form>
     </main>
