@@ -20,15 +20,15 @@
 
     <nav>
         <ul>
-            <li><a href="../StronaGlowna.html" class="active">Strona główna</a></li>
-            <li><a href="../movie/listOfMovies.html" class="active">Filmy</a></li>
-            <li><a href="../playlist/listOfPlaylist.html" class="active">Playlisty</a></li>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
+            <li><a href="../playlist/listOfPlaylist.html">Playlisty</a></li>
             <li><a href="movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a></li>
         </ul>
     </nav>
     <main>
         <h2>Szczegóły połączenia</h2>
-        <form>
+        <form class="form">
             <label for="movie">Wybierz Film: *</label>
             <select name="movie" id="movie">
                 <option>wybierz film</option>
@@ -36,7 +36,7 @@
                 <option value="2"> Indiana Jones</option>
                 <option value="3"> Harry potter</option>
 
-                <option></option>
+
 
             </select>
 
@@ -49,28 +49,25 @@
                 <option value="1"> horrory</option>
                 <option value="2"> Filmy akcji</option>
                 <option value="3"> filmy fantasy</option>
-
-                <option></option>
-
             </select>
-            <span id="errorPlaylistLength">/span>
+
+            <span id="errorPlaylistLength"></span>
+
+            <label for="rating">Dodaj komentarz: *</label>
+            <input value="dobry film" type="text" name="rating" id="rating" required>
+            <span id="errorRatingPlaylist"></span>
 
 
-                <label for="rating">Dodaj komentarz: *</label>
-                <input type="text" name="rating" id="rating" required>
-                <span id="errorRatingPlaylist"></span>
+            <label for="createDate">Dodaj numer na playliscie: *</label>
+            <input value="1" type="number" id="quantity" name="quantity" min="0" required>
+            <span id="errorLinkToMovie"></span>
 
+            <div class="form-buttons">
+                <p id="errorsSummary"></p>
+                <input class="form-button-submit" type="submit" value="Dodaj" />
+                <a class="form-button-cancel" href="movieAndPlaylistAllRecords.html">Anuluj</a>
 
-                <label for="createDate">Dodaj numer na playliscie: *</label>
-                <input type="text" name="createDate" id="createDate" required>
-                <span id="errorLinkToMovie"></span>
-
-                <div>
-                    <p id="errorsSummary"></p>
-                    <input type="submit" value="Dodaj" />
-                    <a href="">Anuluj</a>
-
-                </div>
+            </div>
 
         </form>
     </main>

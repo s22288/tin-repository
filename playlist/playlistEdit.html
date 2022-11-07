@@ -19,15 +19,15 @@
 
     <nav>
         <ul>
-            <li><a href="../StronaGlowna.html" class="active">Strona główna</a></li>
-            <li><a href="../movie/listOfMovies.html" class="active">Filmy</a></li>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
             <li><a href="listOfPlaylist.html" class="active">Playlisty</a></li>
-            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a>
+            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html">Filmy Na Playliscie</a>
         </ul>
     </nav>
     <main>
         <h2>Edytuj Playliste</h2>
-        <form>
+        <form class="form">
             <label for="title">Nazwa Playlisty: *</label>
             <input type="text" name="title" id="title" value="nameplaylist" required>
             <span id="errorTitlePlaylist"></span>
@@ -47,10 +47,10 @@
             <input type="text" name="createDate" id="createDate" value="crd" required>
             <span id="errorLinkToMovie"></span>
 
-            <div>
+            <div class="form-buttons">
                 <p id="errorsSummary"></p>
-                <input type="submit" value="Dodaj" />
-                <a href="">Anuluj</a>
+                <input class="form-button-submit" type="submit" value="Dodaj" />
+                <a class="form-button-cancel" href="listOfPlaylist.html">Anuluj</a>
             </div>
 
         </form>

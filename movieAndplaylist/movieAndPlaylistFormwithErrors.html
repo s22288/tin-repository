@@ -20,15 +20,15 @@
 
     <nav>
         <ul>
-            <li><a href="">Strona główna</a></li>
-            <li><a href="">Filmy</a></li>
-            <li><a href="">Playlisty</a></li>
-            <li><a href="">Filmy na Playliscie</a></li>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
+            <li><a href="../playlist/listOfPlaylist.html">Playlisty</a></li>
+            <li><a href="movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a></li>
         </ul>
     </nav>
     <main>
         <h2>Nowy playlista</h2>
-        <form>
+        <form class="form">
             <label for="movie">Wybierz Film: *</label>
             <select name="movie" id="movie">
                 <option>wybierz film</option>
@@ -40,7 +40,7 @@
 
             </select>
 
-            <span id="errorTitlePlaylist">Pole jest wymagane</span>
+            <span class="errors-text" id="errorTitlePlaylist">Pole jest wymagane</span>
 
 
             <label for="lenght">Wybierz Playliste: *</label>
@@ -53,22 +53,22 @@
                 <option></option>
 
             </select>
-            <span id="errorPlaylistLength">Pole jest wymagane</span>
+            <span class="errors-text" id="errorPlaylistLength">Pole jest wymagane</span>
 
 
             <label for="rating">Dodaj komentarz: *</label>
             <input type="text" name="rating" id="rating" required>
-            <span id="errorRatingPlaylist">Pole jest wymagane</span>
+            <span class="errors-text" id="errorRatingPlaylist">Pole jest wymagane</span>
 
 
             <label for="createDate">Dodaj numer na playliscie: *</label>
             <input type="text" name="createDate" id="createDate" required>
-            <span id="errorLinkToMovie">Pole jest wymagane</span>
+            <span class="errors-text" id="errorLinkToMovie">Pole jest wymagane</span>
 
-            <div>
+            <div class="form-buttons">
                 <p id="errorsSummary">Formularz zawiera błędy</p>
-                <input type="submit" value="Dodaj" />
-                <a href="">Anuluj</a>
+                <input class="form-button-submit" type="submit" value="Dodaj" />
+                <a class="form-button-cancel" href="movieAndPlaylistAllRecords.html">Anuluj</a>
 
             </div>
 

@@ -20,15 +20,15 @@
 
     <nav>
         <ul>
-            <li><a href="../StronaGlowna.html" class="active">Strona główna</a></li>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
             <li><a href="listOfMovies.html" class="active">Filmy</a></li>
-            <li><a href="../playlist/listOfPlaylist.html" class="active">Playlisty</a></li>
-            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a>
+            <li><a href="../playlist/listOfPlaylist.html">Playlisty</a></li>
+            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html">Filmy Na Playliscie</a>
         </ul>
     </nav>
     <main>
         <h2>Szczegóły Filmu</h2>
-        <form>
+        <form class="form">
             <label for="moviename">Nazwa filmu: *</label>
             <input type="text" name="moviename" id="moviename" value="name" required>
             <span id="errorMovieName"></span>
@@ -53,17 +53,18 @@
             <input type="text" name="linktophoto" id="linktophoto" value="linkp" required>
             <span id="errorLinkToPhoto"></span>
 
-            <div>
+            <div class="form-buttons">
                 <p id="errorsSummary"></p>
-                <input type="submit" value="Dodaj" />
-                <a href="">Anuluj</a>
+                <a class="list-actions-button-edit" href="">Edit</a>
+                <!-- <input class="form-button-submit" type="submit" value="Dodaj" /> -->
+
             </div>
 
         </form>
         <h2>szczegóły datyczące filmu na playliście </h2>
 
 
-        <table>
+        <table class="table-list">
             <thead>
                 <tr>
                     <th>Playlista</th>
@@ -82,6 +83,8 @@
                 </tr>
             </tbody>
         </table>
+        <a class="list-actions-button-details" href="listOfMovies.html">Powrót</a>
+
     </main>
     <footer>
         Imię, nazwisko, numer studencki

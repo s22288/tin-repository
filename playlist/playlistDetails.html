@@ -19,15 +19,15 @@
 
     <nav>
         <ul>
-            <li><a href="../StronaGlowna.html" class="active">Strona główna</a></li>
-            <li><a href="../movie/listOfMovies.html" class="active">Filmy</a></li>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
             <li><a href="listOfPlaylist.html" class="active">Playlisty</a></li>
-            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a>
+            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html">Filmy Na Playliscie</a>
         </ul>
     </nav>
     <main>
         <h2>Szczegóły Playlisty</h2>
-        <form>
+        <form class="form">
             <label for="title">Nazwa Playlisty: *</label>
             <input type="text" name="title" id="title" value="nameplaylist" required disabled>
             <span id="errorTitlePlaylist"></span>
@@ -47,34 +47,37 @@
             <input type="text" name="createDate" id="createDate" value="crd" required disabled>
             <span id="errorLinkToMovie"></span>
 
-            <div>
+            <div class="form-buttons">
                 <p id="errorsSummary"></p>
-                <input type="submit" value="Dodaj" />
-                <a href="">Anuluj</a>
+                <a class="list-actions-button-edit" href="playlistEdit.html">Edit</a>
+                <!-- <input class="form-button-submit" type="submit" value="Dodaj" /> -->
+
             </div>
 
         </form>
+
+        <h2>Sczegóły Palylisty</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Filmy</th>
+                    <th>Position</th>
+                    <th>Comment</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gwiezdne wojny</td>
+                    <td>1</td>
+                    <td>film o kosmosie</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+        <a class="list-actions-button-details" href="listOfPlaylist.html">Powrót</a>
     </main>
-    <h2>Sczegóły Palylisty</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Filmy</th>
-                <th>Position</th>
-                <th>Comment</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Gwiezdne wojny</td>
-                <td>1</td>
-                <td>film o kosmosie</td>
-
-
-            </tr>
-        </tbody>
-    </table>
     <footer>
         Imię, nazwisko, numer studencki
     </footer>

@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        img {
-            height: 100px;
-            width: 100px;
-        }
+    <link rel="stylesheet" href="../styles.css">
+
     </style>
 </head>
 
@@ -23,15 +20,15 @@
 
     <nav>
         <ul>
-            <li><a href="../StronaGlowna.html" class="active">Strona główna</a></li>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
             <li><a href="listOfMovies.html" class="active">Filmy</a></li>
-            <li><a href="../playlist/listOfPlaylist.html" class="active">Playlisty</a></li>
-            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a>
+            <li><a href="../playlist/listOfPlaylist.html">Playlisty</a></li>
+            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html">Filmy Na Playliscie</a>
         </ul>
     </nav>
     <main>
         <h2>Edycja Filmu</h2>
-        <form>
+        <form class="form">
             <label for="moviename">Nazwa filmu: *</label>
             <input type="text" name="moviename" id="moviename" value="name" required>
             <span id="errorMovieName"></span>
@@ -56,10 +53,10 @@
             <input type="text" name="linktophoto" id="linktophoto" value="linkp" required>
             <span id="errorLinkToPhoto"></span>
 
-            <div>
+            <div class="form-buttons">
                 <p id="errorsSummary"></p>
-                <input type="submit" value="Dodaj" />
-                <a href="">Anuluj</a>
+                <input class="form-button-submit" type="submit" value="Dodaj" />
+                <a class="form-button-cancel" href="listOfMovies.html">Anuluj</a>
             </div>
 
         </form>
