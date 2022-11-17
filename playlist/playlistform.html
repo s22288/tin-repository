@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1>Movie aplication</h1>
-        <img src="movies.jpeg" alt="moviespicuture">
+        <img src="../movies.png" alt="moviespicuture">
 
     </header>
 
@@ -40,18 +40,18 @@
 
 
             <label for="rating">Ocena Playlisty: *</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="5" required>
+            <input type="number" id="rating" name="quantity" min="1" max="5" required>
             <span id="errorRatingPlaylist"></span>
 
 
             <label for="createDate">Data utworznie Playlisty: *</label>
-            <input type="date" name="createDate" id="createDate" required />
+            <input type="date" name="createDate" id="createDate" required>
 
             <span id="errorLinkToMovie"></span>
 
             <div>
                 <p id="errorsSummary"></p>
-                <input class="form-button-submit" type="submit" value="Dodaj" />
+                <input class="form-button-submit" type="submit" value="Dodaj">
                 <a class="form-button-cancel" href="listOfPlaylist.html">Anuluj</a>
             </div>
 

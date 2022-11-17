@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1>Movie aplication</h1>
-        <img src="movies.jpeg" alt="moviespicuture">
+        <img src="../movies.png" alt="moviespicuture">
 
     </header>
 
@@ -29,22 +29,22 @@
         <h2>Szczegóły Playlisty</h2>
         <form class="form">
             <label for="title">Nazwa Playlisty: *</label>
-            <input type="text" name="title" id="title" value="nameplaylist" required disabled>
+            <input type="text" name="title" id="title" value="HorrorPlaylist" required disabled>
             <span id="errorTitlePlaylist"></span>
 
 
-            <label for="lenght">Długość Playlisty: *</label>
-            <input type="text" name="length" id="lenght" value="len" required disabled>
+            <label for="lenght">Długość w godz: *</label>
+            <input type="text" name="length" id="lenght" value="2" required disabled>
             <span id="errorPlaylistLength"></span>
 
 
             <label for="rating">Ocena Playlisty: *</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="5" required>
+            <input type="number" id="rating" value="5.5" name="quantity" min="1" max="5" required disabled>
             <span id="errorRatingPlaylist"></span>
 
 
             <label for="createDate">Data utworznie Playlisty: *</label>
-            <input type="date" name="createDate" id="createDate" required />
+            <input type="date" name="createDate" value="2014-02-08" id="createDate" required disabled>
             <span id="errorLinkToMovie"></span>
 
             <div class="form-buttons">

@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1>Movie aplication</h1>
-        <img src="movies.jpeg" alt="moviespicuture">
+        <img src="../movies.png" alt="moviespicuture">
 
     </header>
 
@@ -29,45 +29,43 @@
     <main>
         <h2>Nowy playlista</h2>
         <form class="form">
-            <label for="movie">Wybierz Film: *</label>
-            <select name="movie" id="movie">
+            <label for="movie">Wybierz Film: <span class="symbol-required">*</span></label>
+            <select class="wrong" name="movie" id="movie">
                 <option>wybierz film</option>
                 <option value="1"> gwiezdne wojny</option>
                 <option value="2"> Indiana Jones</option>
                 <option value="3"> Harry potter</option>
 
-                <option></option>
 
             </select>
 
             <span class="errors-text" id="errorTitlePlaylist">Pole jest wymagane</span>
 
 
-            <label for="lenght">Wybierz Playliste: *</label>
-            <select name="movie" id="movie">
+            <label for="movieAndPlaylist">Wybierz Playliste: <span class="symbol-required">*</span></label>
+            <select class="wrong" name="movieAndPlaylist" id="movieAndPlaylist">
                 <option>wybierz playliste</option>
                 <option value="1"> horrory</option>
                 <option value="2"> Filmy akcji</option>
                 <option value="3"> filmy fantasy</option>
 
-                <option></option>
 
             </select>
             <span class="errors-text" id="errorPlaylistLength">Pole jest wymagane</span>
 
 
-            <label for="rating">Dodaj komentarz: *</label>
-            <input type="text" name="rating" id="rating" required>
+            <label for="rating">Dodaj komentarz: <span class="symbol-required">*</span></label>
+            <input class="wrong" type="text" name="rating" id="rating" required>
             <span class="errors-text" id="errorRatingPlaylist">Pole jest wymagane</span>
 
 
-            <label for="createDate">Dodaj numer na playliscie: *</label>
-            <input type="text" name="createDate" id="createDate" required>
+            <label for="createDate">Dodaj numer na playliscie: <span class="symbol-required">*</span></label>
+            <input class="wrong" type="text" name="createDate" id="createDate" required>
             <span class="errors-text" id="errorLinkToMovie">Pole jest wymagane</span>
 
             <div class="form-buttons">
-                <p id="errorsSummary">Formularz zawiera błędy</p>
-                <input class="form-button-submit" type="submit" value="Dodaj" />
+                <p class="errors-text" id="errorsSummary">Formularz zawiera błędy</p>
+                <input class="form-button-submit" type="submit" value="Dodaj">
                 <a class="form-button-cancel" href="movieAndPlaylistAllRecords.html">Anuluj</a>
 
             </div>

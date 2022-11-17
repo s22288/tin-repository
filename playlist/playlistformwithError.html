@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1>Movie aplication</h1>
-        <img src="movies.jpeg" alt="moviespicuture">
+        <img src="../movies.png" alt="moviespicuture">
 
     </header>
 
@@ -28,29 +28,31 @@
     <main>
         <h2>Nowy playlista</h2>
         <form class="form">
-            <label for="title">Nazwa Playlisty: *</label>
-            <input type="text" name="title" id="title" required>
+            <label for="title">Nazwa Playlisty: <span class="symbol-required">*</span></label>
+            <input type="text" class="wrong" name="title" id="title" required>
             <span class="errors-text" id="errorTitlePlaylist">Pole jest wymagane</span>
 
 
-            <label for="lenght">Długość Playlisty: *</label>
-            <input type="text" name="length" id="lenght" required>
+            <label for="lenght">Długość Playlisty: <span class="symbol-required">*</span></label>
+            <input type="text" class="wrong" name="length" id="lenght" required>
             <span class="errors-text" id="errorPlaylistLength">Pole jest wymagane</span>
 
 
-            <label for="rating">Ocena Playlisty: *</label>
-            <input type="text" name="rating" id="rating" required>
+            <label for="rating">Ocena Playlisty: <span class="symbol-required">*</span></label>
+            <input type="number" class="wrong" id="rating" name="quantity" min="1" max="5" required>
+
+
             <span class="errors-text" id="errorRatingPlaylist">Pole jest wymagane</span>
 
 
-            <label for="createDate">Data utworznie Playlisty: *</label>
-            <input type="text" name="createDate" id="createDate" required>
+            <label for="createDate">Data utworznie Playlisty: <span class="symbol-required">*</span></label>
+            <input type="date" class="wrong" name="createDate" id="createDate" required>
             <span class="errors-text" id="errorLinkToMovie">Pole jest wymagane</span>
 
             <div class="form-buttons">
                 <p class="errors-text" id="errorsSummary">Formularz zawiera błędy</p>
-                <input class="form-button-submit" type="submit" value="Dodaj" />
-                <a class="form-button-cancel" href="">Anuluj</a>
+                <input class="form-button-submit" type="submit" value="Dodaj">
+                <a class="form-button-cancel" href="listOfPlaylist.html">Anuluj</a>
             </div>
 
         </form>

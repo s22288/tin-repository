@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1>Movie aplication</h1>
-        <img src="movies.jpeg" alt="moviespicuture">
+        <img src="../movies.png" alt="moviespicuture">
 
     </header>
 
@@ -29,47 +29,45 @@
     <main>
         <h2>Nowy playlista</h2>
         <form class="form">
-            <label for="movie">Wybierz Film: <span class="symbol-required">*</span></label>
+            <label for="movie">Wybierz Film: *</label>
             <select name="movie" id="movie">
                 <option>wybierz film</option>
                 <option value="1"> gwiezdne wojny</option>
                 <option value="2"> Indiana Jones</option>
                 <option value="3"> Harry potter</option>
 
-                <option></option>
 
             </select>
 
             <span id="errorTitlePlaylist"></span>
 
 
-            <label for="lenght">Wybierz Playliste:<span class="symbol-required">*</span> </label>
-            <select name="movie" id="movie">
+            <label for="movieAndPlaylist">Wybierz Playliste: * </label>
+            <select name="movieAndPlaylist" id="movieAndPlaylist">
                 <option>wybierz playliste</option>
                 <option value="1"> horrory</option>
                 <option value="2"> Filmy akcji</option>
                 <option value="3"> filmy fantasy</option>
 
-                <option></option>
 
             </select>
             <span id="errorPlaylistLength"></span>
 
 
-            <label for="rating">Dodaj komentarz:<span class="symbol-required"></span>*</label>
+            <label for="rating">Dodaj komentarz: *</label>
             <input type="text" name="rating" id="rating" required>
             <span id="errorRatingPlaylist"></span>
 
 
-            <label for="createDate">Wybierz numer na playliscie: <span class="symbol-required">*</span></label>
+            <label for="createDate">Wybierz numer na playliscie: *</label>
 
-            <input type="number" id="quantity" name="quantity" min="0" required>
+            <input type="number" id="createDate" name="quantity" min="0" required>
 
             <span id="errorLinkToMovie"></span>
 
             <div>
                 <p class="form-buttons" id="errorsSummary"></p>
-                <input class="form-button-submit" type="submit" value="Dodaj" />
+                <input class="form-button-submit" type="submit" value="Dodaj">
                 <a class="form-button-cancel" href="movieAndPlaylistAllRecords.html">Anuluj</a>
             </div>
 
