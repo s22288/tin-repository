@@ -30,11 +30,11 @@
         <h2>Szczegóły połączenia</h2>
         <form class="form">
             <label for="movie">Wybierz Film: *</label>
-            <select name="movie" id="movie" >
-                <option disabled>wybierz film</option >
-                <option disabled selected="selected" value="1"> gwiezdne wojny</option >
-                <option disabled value="2"> Indiana Jones</option >
-                <option disabled value="3"> Harry potter</option >
+            <select name="movie" id="movie" disabled>
+                <option disabled>wybierz film</option>
+                <option disabled selected="selected" value="1"> gwiezdne wojny</option>
+                <option disabled value="2"> Indiana Jones</option>
+                <option disabled value="3"> Harry potter</option>
 
 
 
@@ -44,11 +44,11 @@
 
 
             <label for="lenght">Wybierz Playliste: *</label>
-            <select name="movieplaylist" id="lenght" readonly>
-                <option disabled>wybierz playliste</option >
-                <option disabled value="1"> horrory</option >
-                <option disabled value="2"> Filmy akcji</option >
-                <option disabled selected="selected" value="3"> filmy fantasy</option >
+            <select name="movieplaylist" id="lenght" disabled>
+                <option disabled>wybierz playliste</option>
+                <option disabled value="1"> horrory</option>
+                <option disabled value="2"> Filmy akcji</option>
+                <option disabled selected="selected" value="3"> filmy fantasy</option>
 
 
             </select>
@@ -59,12 +59,12 @@
 
 
             <label for="rating">Dodaj komentarz: *</label>
-            <input type="text" name="rating" value="dobry film" id="rating"  readonly>
+            <input type="text" name="rating" value="dobry film" id="rating" disabled>
             <span id="errorRatingPlaylist"></span>
 
 
             <label for="createDate">Dodaj numer na playliscie: *</label>
-            <input type="number" id="createDate" value="1" name="quantity" min="0" readonly>
+            <input type="number" id="createDate" value="1" name="quantity" min="0" readonly disabled>
 
             <span id="errorLinkToMovie"></span>
 
