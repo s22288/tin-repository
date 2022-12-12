@@ -1,5 +1,0 @@
-main h2 {
-    border-bottom: 1px solid #7f8c8d;
-    color: blue;
-    margin-bottom: 2rem;
-}
