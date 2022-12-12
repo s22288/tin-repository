@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Movie aplication</h1>
+        <img src="../movies.png" alt="moviespicuture">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
+            <li><a href="../playlist/listOfPlaylist.html">Playlisty</a></li>
+            <li><a href="movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Szczegóły połączenia</h2>
+        <form class="form">
+            <label for="movie">Wybierz Film: *</label>
+            <select name="movie" id="movie" disabled>
+                <option disabled>wybierz film</option>
+                <option disabled selected="selected" value="1"> gwiezdne wojny</option>
+                <option disabled value="2"> Indiana Jones</option>
+                <option disabled value="3"> Harry potter</option>
+
+
+
+            </select>
+            <span id="errorTitleMovie"></span>
+
+
+
+            <label for="lenght">Wybierz Playliste: *</label>
+            <select name="movieplaylist" id="lenght" disabled>
+                <option disabled>wybierz playliste</option>
+                <option disabled value="1"> horrory</option>
+                <option disabled value="2"> Filmy akcji</option>
+                <option disabled selected="selected" value="3"> filmy fantasy</option>
+
+
+            </select>
+            <span id="errorTitlePlaylist"></span>
+
+
+
+
+
+            <label for="rating">Dodaj komentarz: *</label>
+            <input type="text" name="rating" value="dobry film" id="rating" disabled>
+            <span id="errorRatingPlaylist"></span>
+
+
+            <label for="createDate">Dodaj numer na playliscie: *</label>
+            <input type="number" id="createDate" value="1" name="quantity" min="0" readonly disabled>
+
+            <span id="errorLinkToMovie"></span>
+
+            <div class="form-buttons">
+                <p id="errorsSummary"></p>
+                <a class="list-actions-button-edit" href="movieAndPlaylistEdit.html">Edytuj</a>
+
+                <a class="list-actions-button-details" href="movieAndPlaylistAllRecords.html">Porwót</a>
+
+
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        Imię, nazwisko, numer studencki
+    </footer>
+</body>
+
+</html>

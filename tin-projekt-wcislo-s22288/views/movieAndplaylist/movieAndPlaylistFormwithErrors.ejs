@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Movie aplication</h1>
+        <img src="../movies.png" alt="moviespicuture">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
+            <li><a href="../playlist/listOfPlaylist.html">Playlisty</a></li>
+            <li><a href="movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy playlista</h2>
+        <form class="form">
+            <label for="movie">Wybierz Film: <span class="symbol-required">*</span></label>
+            <select class="wrong" name="movie" id="movie">
+                <option>wybierz film</option>
+                <option value="1"> gwiezdne wojny</option>
+                <option value="2"> Indiana Jones</option>
+                <option value="3"> Harry potter</option>
+
+
+            </select>
+
+            <span class="errors-text" id="errorTitlePlaylist">Pole jest wymagane</span>
+
+
+            <label for="movieAndPlaylist">Wybierz Playliste: <span class="symbol-required">*</span></label>
+            <select class="wrong" name="movieAndPlaylist" id="movieAndPlaylist">
+                <option>wybierz playliste</option>
+                <option value="1"> horrory</option>
+                <option value="2"> Filmy akcji</option>
+                <option value="3"> filmy fantasy</option>
+
+
+            </select>
+            <span class="errors-text" id="errorPlaylistLength">Pole jest wymagane</span>
+
+
+            <label for="rating">Dodaj komentarz: <span class="symbol-required">*</span></label>
+            <input class="wrong" type="text" name="rating" id="rating" required>
+            <span class="errors-text" id="errorRatingPlaylist">Pole jest wymagane</span>
+
+
+            <label for="createDate">Dodaj numer na playliscie: <span class="symbol-required">*</span></label>
+            <input class="wrong" type="text" name="createDate" id="createDate" required>
+            <span class="errors-text" id="errorLinkToMovie">Pole jest wymagane</span>
+
+            <div class="form-buttons">
+                <p class="errors-text" id="errorsSummary">Formularz zawiera błędy</p>
+                <input class="form-button-submit" type="submit" value="Dodaj">
+                <a class="form-button-cancel" href="movieAndPlaylistAllRecords.html">Anuluj</a>
+
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        Imię, nazwisko, numer studencki
+    </footer>
+</body>
+
+</html>

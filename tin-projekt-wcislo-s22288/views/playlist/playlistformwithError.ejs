@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Movie aplication</h1>
+        <img src="../movies.png" alt="moviespicuture">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
+            <li><a href="listOfPlaylist.html" class="active">Playlisty</a></li>
+            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html">Filmy Na Playliscie</a>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy playlista</h2>
+        <form class="form">
+            <label for="title">Nazwa Playlisty: <span class="symbol-required">*</span></label>
+            <input type="text" class="wrong" name="title" id="title" required>
+            <span class="errors-text" id="errorTitlePlaylist">Pole jest wymagane</span>
+
+
+            <label for="lenght">Długość Playlisty: <span class="symbol-required">*</span></label>
+            <input type="text" class="wrong" name="length" id="lenght" required>
+            <span class="errors-text" id="errorPlaylistLength">Pole jest wymagane</span>
+
+
+            <label for="rating">Ocena Playlisty: <span class="symbol-required">*</span></label>
+            <input type="number" class="wrong" id="rating" name="quantity" min="1" max="5" required>
+
+
+            <span class="errors-text" id="errorRatingPlaylist">Pole jest wymagane</span>
+
+
+            <label for="createDate">Data utworznie Playlisty: <span class="symbol-required">*</span></label>
+            <input type="date" class="wrong" name="createDate" id="createDate" required>
+            <span class="errors-text" id="errorLinkToMovie">Pole jest wymagane</span>
+
+            <div class="form-buttons">
+                <p class="errors-text" id="errorsSummary">Formularz zawiera błędy</p>
+                <input class="form-button-submit" type="submit" value="Dodaj">
+                <a class="form-button-cancel" href="listOfPlaylist.html">Anuluj</a>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        Imię, nazwisko, numer studencki
+    </footer>
+</body>
+
+</html>

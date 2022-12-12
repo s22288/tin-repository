@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/javascript" src="../js/validationMovieAndPlaylist.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Movie aplication</h1>
+        <img src="../movies.png" alt="moviespicuture">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
+            <li><a href="../playlist/listOfPlaylist.html">Playlisty</a></li>
+            <li><a href="movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nowy playlista</h2>
+        <form class="form" novalidate onsubmit="return validateForm();">
+            <label for="movieChoose">Wybierz Film: *</label>
+            <select name="movieChoose" id="movieChoose">
+                <option>wybierz film</option>
+                <option value="1"> gwiezdne wojny</option>
+                <option value="2"> Indiana Jones</option>
+                <option value="3"> Harry potter</option>
+
+
+            </select>
+
+            <span id="errorMovieChoose"></span>
+
+
+            <label for="playlistChoose">Wybierz Playliste: * </label>
+            <select name="playlistChoose" id="playlistChoose">
+                <option>wybierz playliste</option>
+                <option value="1"> horrory</option>
+                <option value="2"> Filmy akcji</option>
+                <option value="3"> filmy fantasy</option>
+
+
+            </select>
+            <span id="errorPlaylistChoose"></span>
+
+
+            <label for="comment">Dodaj komentarz: *</label>
+            <input type="text" name="comment" id="comment" required>
+            <span id="errorComment"></span>
+
+
+            <label for="numberOnPlaylist">Wybierz numer na playliscie: *</label>
+
+            <input type="number" id="numberOnPlaylist" name="numberOnPlaylist" min="0" required>
+
+            <span id="errorNumberOnPlaylist"></span>
+
+            <div>
+                <p class="form-buttons" id="errorsSummary"></p>
+                <input class="form-button-submit" type="submit" value="Dodaj">
+                <a class="form-button-cancel" href="movieAndPlaylistAllRecords.html">Anuluj</a>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        Imię, nazwisko, numer studencki
+    </footer>
+</body>
+
+</html>

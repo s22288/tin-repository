@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie List</title>
+    <link rel="stylesheet" href="../styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Movie aplication</h1>
+        <img src="../movies.png" alt="moviespicuture">
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../StronaGlowna.html">Strona główna</a></li>
+            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
+            <li><a href="listOfPlaylist.html" class="active">Playlisty</a></li>
+            <li><a href="../movieAndPlaylist/movieAndPlaylistAllRecords.html">Filmy Na Playliscie</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Dostepne playlisty</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Długość</th>
+                    <th>ocena</th>
+                    <th>Data utworzenia</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>horrory</td>
+                    <td>15godz</td>
+                    <td>3.5</td>
+                    <td>12-09-2001</td>
+
+                    <td>
+                        <ul class="list-actions">
+                            <li>
+                                <a class="list-actions-button-details" href="playlistDetails.html">Szczegóły</a>
+                            </li>
+                            <li>
+                                <a class="list-actions-button-edit" href="playlistEdit.html">Edytuj</a>
+
+                            </li>
+                            <li>
+                                <a class="list-actions-button-delete" href="">Usuń</a>
+                            </li>
+
+                        </ul>
+
+
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+        <p><a class="button-add" href="playlistform.html">Dodaj nową Playliste</a></p>
+    </main>
+    <footer>
+        Imię, nazwisko, numer studencki
+    </footer>
+</body>
+
+</html>
