@@ -8,7 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
 
-    </style>
+    <script type="application/javascript" src="../js/validaioncommon.js"></script>
+
 </head>
 
 <body>
@@ -28,14 +29,14 @@
     </nav>
     <main>
         <h2>Edycja Filmu</h2>
-        <form class="form">
+        <form class="form" novalidate onsubmit="return validateForm();">
             <label for="moviename">Nazwa filmu: *</label>
             <input type="text" name="moviename" id="moviename" value="Gwiezdne wojny" required>
             <span id="errorMovieName"></span>
 
 
-            <label for="lenght">Długość filmu: *</label>
-            <input type="text" name="length" id="lenght" value="200" required>
+            <label for="movieLength">Długość filmu: *</label>
+            <input type="text" name="length" id="movieLength" value="200" required>
             <span id="errorMovieLength"></span>
 
 

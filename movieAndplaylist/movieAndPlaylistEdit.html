@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
+    <script type="application/javascript" src="../js/validationMovieAndPlaylist.js"></script>
 
 
 </head>
@@ -28,9 +29,9 @@
     </nav>
     <main>
         <h2>Szczegóły połączenia</h2>
-        <form class="form">
-            <label for="movie">Wybierz Film: *</label>
-            <select name="movie" id="movie">
+        <form class="form" novalidate onsubmit="return validateForm();">
+            <label for="movieChoose">Wybierz Film: *</label>
+            <select name="movieChoose" id="movieChoose">
                 <option>wybierz film</option>
                 <option selected="selected" value="1"> gwiezdne wojny</option>
                 <option value="2"> Indiana Jones</option>
@@ -40,27 +41,27 @@
 
             </select>
 
-            <span id="errorTitlePlaylist"></span>
+            <span id="errorMovieChoose"></span>
 
 
-            <label for="movieAndPlaylist">Wybierz Playliste: *</label>
-            <select name="movieAndPlaylist" id="movieAndPlaylist">
+            <label for="playlistChoose">Wybierz Playliste: *</label>
+            <select name="playlistChoose" id="playlistChoose">
                 <option>wybierz playliste</option>
                 <option value="1"> horrory</option>
                 <option value="2"> Filmy akcji</option>
                 <option selected="selected" value="3"> filmy fantasy</option>
             </select>
 
-            <span id="errorPlaylistLength"></span>
+            <span id="errorPlaylistChoose"></span>
 
-            <label for="rating">Dodaj komentarz: *</label>
-            <input value="dobry film" type="text" name="rating" id="rating" required>
-            <span id="errorRatingPlaylist"></span>
+            <label for="comment">Dodaj komentarz: *</label>
+            <input value="dobry film" type="text" name="comment" id="comment" required>
+            <span id="errorComment"></span>
 
 
-            <label for="numberOnplaylist">Dodaj numer na playliscie: *</label>
-            <input value="1" type="number" id="numberOnplaylist" name="quantity" min="0" required>
-            <span id="errorLinkToMovie"></span>
+            <label for="numberOnPlaylist">Dodaj numer na playliscie: *</label>
+            <input value="1" type="number" id="numberOnPlaylist" name="numberOnPlaylist" min="0" required>
+            <span id="errorNumberOnPlaylist"></span>
 
             <div class="form-buttons">
                 <p id="errorsSummary"></p>
