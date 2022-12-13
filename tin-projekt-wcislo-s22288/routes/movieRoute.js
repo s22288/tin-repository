@@ -7,4 +7,8 @@ const movieController = require('../controllers/movieController');
 router.get('/', movieController.showMovieList);
 router.get('/empty', movieController.showMovieListEmpty);
 router.get('/add', movieController.AddMovie);
+router.get('/addWithErrors', movieController.AddMovieWithErrors);
+router.get('/details/:movieId', movieController.showMovieDetails);
+router.get('/edit/:movieId', movieController.showMovieEdit);
+
 module.exports = router;

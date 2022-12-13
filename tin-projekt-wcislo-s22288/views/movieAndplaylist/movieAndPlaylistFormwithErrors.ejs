@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../fragments/header.ejs') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles.css">
-
-
-</head>
-
-<body>
-    <header>
-        <h1>Movie aplication</h1>
-        <img src="../movies.png" alt="moviespicuture">
-
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="../StronaGlowna.html">Strona główna</a></li>
-            <li><a href="../movie/listOfMovies.html">Filmy</a></li>
-            <li><a href="../playlist/listOfPlaylist.html">Playlisty</a></li>
-            <li><a href="movieAndPlaylistAllRecords.html" class="active">Filmy Na Playliscie</a></li>
-        </ul>
-    </nav>
     <main>
         <h2>Nowy playlista</h2>
         <form class="form">
@@ -72,9 +46,4 @@
 
         </form>
     </main>
-    <footer>
-        Imię, nazwisko, numer studencki
-    </footer>
-</body>
-
-</html>
+    <%- include('../fragments/footer.ejs') %>
