@@ -11,7 +11,9 @@ var usersRouter = require('./routes/users');
 var movieRoute = require('./routes/movieRoute');
 var playlistRoute = require('./routes/playlistRoute');
 var movieAndPlaylistRoute = require('./routes/movieAndPlaylistRoute');
-
+const movieApiRouter = require('./routes/MovieApiRoute');
+const playlistApiRouter = require('./routes/PlaylistApiRoute');
+const movieAndPlaylistApiRouter = require('./routes/PlaylistAndMovieRoute');
 var app = express();
 
 // view engine setup
@@ -32,6 +34,9 @@ app.use('/movies', movieRoute);
 app.use('/users', usersRouter);
 app.use('/playlists', playlistRoute);
 app.use('/moviesAndPlaylists', movieAndPlaylistRoute);
+app.use('/api/movies', movieApiRouter);
+app.use('/api/playlists', playlistApiRouter);
+app.use('/api/moviesAndPlaylists', movieAndPlaylistApiRouter);
 
 
 
