@@ -10,3 +10,5 @@ router.get('/:movieAndPlaylistId', MovieApiControler.getMovieAndPlaylistById);
 router.post('/', MovieApiControler.createMovieAndPlaylist);
 router.put('/:movieAndPlaylistId', MovieApiControler.updateMovieAndPlaylist);
 router.delete('/:movieAndPlaylistId', MovieApiControler.deleteMovieAndPlaylist);
+
+module.exports = router;

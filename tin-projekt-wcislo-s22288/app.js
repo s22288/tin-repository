@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/movies', movieRoute);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 app.use('/playlists', playlistRoute);
 app.use('/moviesAndPlaylists', movieAndPlaylistRoute);
 app.use('/api/movies', movieApiRouter);
