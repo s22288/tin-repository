@@ -1,1 +1,1 @@
-create schema IF NOT EXISTS `tin-example-sequelize`;
+create schema if not exists `tin-example-sequelize`;

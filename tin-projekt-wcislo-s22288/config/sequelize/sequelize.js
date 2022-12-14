@@ -1,8 +1,14 @@
- const Sequelize = require('sequelize');
+const dbConfig = require('./db-config');
+const Sequelize = require('sequelize');
 
- const sequelize = new Sequelize('tin-example-sequelize', 'root', 'root', {
-    dialect: 'mysql',
-    host: 'localhost',
- });
 
-    module.exports = sequelize;
+const sequelize = new Sequelize(dbConfig.Database, 'root', dbConfig.Password, {
+    host: dbConfig.Host,
+    dialect: dbConfig.Dialect,
+
+});
+
+
+
+
+module.exports = sequelize;
