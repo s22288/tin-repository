@@ -5,16 +5,62 @@
         <table class="table-list">
             <thead>
                 <tr>
-                    <th>Movie Name</th>
-                    <th>Lenght</th>
-                    <th>PlaylistName</th>
-                    <th>Comment</th>
-                    <th>Position on playlist</th>
-                    <th>Akcje</th>
+                    <td>Nazwa filmu</td>
+                    <td>200 min</td>
+                    <td>kosmos</td>
+                    <td>"Dobry film"</td>
+                    <td>1</td>
+
+
 
                 </tr>
             </thead>
             <tbody>
+
+                <% for(let movPlay of movieAndPlaylist) { %>
+                    <tr>
+                        <td>
+                            <%= movPlay.movie_name %>
+                        </td>
+                        <td>
+                            <%= movPlay.movie_length %>
+                        </td>
+                        <td>
+                            <%= movPlay.playlist_name %>
+                        </td>
+                        <td>
+                            <%= movPlay.comment %>
+                        </td>
+                        <td>
+                            <%= movPlay.position_on_playlist %>
+                        </td>
+
+                        <td>
+                            <ul class="list-actions">
+                                <li>
+                                    <a href="/moviesAndPlaylists/details/<%=movPlay.movie_playlist_id%>"
+                                        class="list-actions-button-details">Szczegóły</a>
+                                </li>
+                                <li>
+                                    <a href="/moviesAndPlaylists/edit/<%=movPlay.movie_playlist_id%>"
+                                        class="list-actions-button-edit">Edytuj</a>
+
+                                </li>
+                                <li>
+                                    <a href="/moviesAndPlaylists/delete/<%=movPlay.movie_playlist_id%>"
+                                        class="list-actions-button-delete" href="">Usuń</a>
+                                </li>
+
+                            </ul>
+
+
+                        </td>
+
+                    </tr>
+
+                    <% } %>
+            </tbody>
+            <!-- <tbody>
                 <tr>
                     <td>Gwiezdne Wojny</td>
                     <td>200 min</td>
@@ -69,7 +115,7 @@
                     </td>
 
                 </tr>
-            </tbody>
+            </tbody> -->
         </table>
         <p><a class="button-add" href="movieAndPlaylistForm.html">Dodaj nowego połączenie</a></p>
     </main>

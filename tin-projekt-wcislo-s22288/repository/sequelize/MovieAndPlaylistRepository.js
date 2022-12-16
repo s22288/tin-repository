@@ -3,7 +3,7 @@ const Sequalize = require('sequelize');
 
 const PlaylistAndMovie = require('../../model/PlalistAndMovie');
 
-exports.getPalylistAndMovies = () => {
+exports.getMovieAndPlaylist = () => {
     return PlaylistAndMovie.findAll();
 }
 
@@ -22,17 +22,17 @@ exports.createPlaylistAndMovie = (data) => {
 
 
 exports.updatePlaylistAndMovie = (playlistAndMovieId, data) => {
-    return PlaylistAndMovie.update(data, {where: {_id: playlistAndMovieId}});
+    return PlaylistAndMovie.update(data, { where: { _id: playlistAndMovieId } });
 }
 
 exports.deletePlaylistAndMovie = (playlistAndMovieId) => {
     return PlaylistAndMovie.destroy({
-        where: {movie_playlist_id: playlistAndMovieId}
+        where: { movie_playlist_id: playlistAndMovieId }
     });
 }
 
 exports.deleteManyPlaylistAndMovie = (playlistAndMovieId) => {
     return PlaylistAndMovie.destroy({
-        where: {playlist_id: playlistAndMovieId}
+        where: { playlist_id: playlistAndMovieId }
     });
 }

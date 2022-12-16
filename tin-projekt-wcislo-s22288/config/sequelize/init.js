@@ -16,7 +16,7 @@ module.exports = () => {
             return Movie.bulkCreate([
                 { movie_name: 'The Shawshank Redemption', movie_length: 142, movie_rating: 9.3, movie_link: 'https://www.youtube.com/watch?v=6hB3S9bIaco', photo_link: 'https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg' },
                 { movie_name: 'The Godfather', movie_length: 175, movie_rating: 9.2, movie_link: 'https://www.youtube.com/watch?v=sY1S34973zA', photo_link: 'https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg' },
-                { movie_name: 'The Dark Knight', movie_length: 152, movie_rating: 9.0, movie_link: 'https://www.youtube.com/watch?v=EXeTwQWrcwY', photo_link: 'https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg' },
+                { movie_name: 'The Dark Knight', movie_length: 152, movie_rating: 9.0, movie_link: 'https://www.youtube.com/watch?v=EXeTwQWrcwY', photo_link: 'https://fwcdn.pl/fpo/63/51/236351/7198307.3.jpg' },
             ]).then(() => {
                 return Movie.findAll();
             });

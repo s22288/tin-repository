@@ -15,6 +15,65 @@
                 </tr>
             </thead>
             <tbody>
+                <% for(let mov of movies) { %>
+                    <tr>
+                        <td>
+                            <%= mov.movie_name %>
+                        </td>
+                        <td>
+                            <%= mov.movie_length %>
+                        </td>
+                        <td>
+                            <%= mov.movie_rating %>
+                        </td>
+                        <td><img src="<%= mov.photo_link %>" alt="Italian Trulli"></td>
+                        <td>
+                            <%= mov.movie_link %>
+                        </td>
+
+
+                        <td>
+                            <ul class="list-actions">
+                                <li>
+                                    <a href="/movies/details/<%=mov.movie_id%>"
+                                        class="list-actions-button-details">Szczegóły</a>
+                                </li>
+                                <li>
+                                    <a href="/movies/edit/<%=mov.movie_id%>" class="list-actions-button-edit">Edytuj</a>
+
+                                </li>
+                                <li>
+                                    <a href="/movies/delete/<%=mov.movie_id%>" class="list-actions-button-delete"
+                                        href="">Usuń</a>
+                                </li>
+
+                            </ul>
+
+
+                        </td>
+
+                    </tr>
+                    <% } %>
+
+            </tbody>
+
+
+        </table>
+
+
+        <!-- <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Movie Name</th>
+                    <th>Lenght</th>
+                    <th>Ocena</th>
+                    <th>zdjecie</th>
+                    <th>filmik</th>
+                    <th>Akcje</th>
+
+                </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Gwiezdne Wojny</td>
                     <td>200 min</td>
@@ -44,7 +103,7 @@
 
                 </tr>
             </tbody>
-        </table>
+        </table> -->
         <p><a class="button-add" href="movieForm.html">Dodaj nowy Film</a></p>
     </main>
     <%- include('../fragments/footer.ejs') %>
